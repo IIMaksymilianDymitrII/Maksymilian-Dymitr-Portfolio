@@ -1,170 +1,191 @@
+/* ---------------- Fonts ---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* ---------------- Global Styles ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  max-width: screen;
+  max-height: screen;
+  box-sizing: border-box;
+    user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* ---------------- Main Content ---------------- */
 #content {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 section {
-    min-height: 100vh;
-    min-width: 100vw;
-    scroll-snap-align: start;
-    padding: 0;
-    margin: 0;
-    border: 0;
+  min-height: 100vh;
+  max-width: 100vw;
+  scroll-snap-align: start;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    max-width: 100vw;
-    max-height: screen;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-p{
-    font-size: 1px;
-    max-width: 50vw ;
-}
-
-#education-details{
-    background-color: #0C6291;
-    padding: 20px;
-    border-radius: 30px;
+/* ---------------- Education & Experience ---------------- */
+#education-details {
+  background-color: #0c6291;
+  padding: 20px;
+  border-radius: 30px;
 }
 
 #education-details * {
-    color: #fbfef9;
-    text-decoration: none;
+  color: #fbfef9;
+  text-decoration: none;
 }
-#exprerience-details{
-    background-color: #a63446;
-    padding: 20px;
-    border-radius: 30px;
+
+#exprerience-details {
+  background-color: #a63446;
+  padding: 20px;
+  border-radius: 30px;
 }
+
 #exprerience-details * {
-    color: #fbfef9;
-    text-decoration: none;
+  color: #fbfef9;
+  text-decoration: none;
 }
+
+/* ---------------- Typography ---------------- */
 #title {
-    font-size: 4vw;
-    text-align: left;
-    color: #333;
-}   
-.location-date {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-ul {
-    list-style-type: none;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    line-height: -15px;
-    padding-top: 1px;
-    color: #666;
-}
-
-h4 {
-    font-size: 1.5vw;
-    text-align: left;
-    color: #333;
-    margin-top: 10px;
+  font-size: 4vw;
+  text-align: left;
+  color: #333;
 }
 
 h2 {
-    font-size: 2vw;
-    text-align: left;
-    color: #333;
-    margin-top: 10px;
-}
-
-#description {
-    font-size: 1.5vw;
-    text-align: left;
-    color: #666;
-    margin-top: 10px;
-}
-
-#manzen {
-    font-size: 1.5vw;
-    text-align: left;
-    color: #666;
-    margin-top: 10px;
-}
-
-.text-section { 
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-margin-left:3vw ;
-}
-
-p {
-    font-size: 1.5vw;
-    text-align: left;
-    color: #333;
-    margin-top: 10px;
+  font-size: 2vw;
+  text-align: left;
+  color: #333;
+  margin-top: 10px;
 }
 
 h3 {
-    font-size: 1.5vw;
-    text-align: left;
-    color: #333;
-    margin-top: 10px;
+  font-size: 1.5vw;
+  text-align: left;
+  color: #333;
+  margin-top: 10px;
 }
 
+h4 {
+  font-size: 1.5vw;
+  text-align: left;
+  color: #333;
+  margin-top: 10px;
+}
+
+p {
+  max-width: 50vw;
+  font-size: 1.5vw;
+  text-align: left;
+  color: #333;
+  margin-top: 10px;
+}
+
+#description {
+  font-size: 1.5vw;
+  text-align: left;
+  color: #666;
+  margin-top: 10px;
+}
+
+#manzen {
+  font-size: 1.5vw;
+  text-align: left;
+  color: #666;
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  line-height: -15px;
+  padding-top: 1px;
+  color: #666;
+}
+
+/* ---------------- Layout ---------------- */
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 3vw;
+}
+
+.location-date {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* ---------------- Splash Screen ---------------- */
 #splash {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 6vw;
-    color: black;
-    z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vw;
+  color: black;
+  z-index: 9999;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
+/* ---------------- Animations ---------------- */
 main {
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
-    padding: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  padding: 10px;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(8px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeOut {
-    from {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    to {
-        opacity: 0;
-    }
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .fadeOut {
-    animation: fadeOut 0.6s ease forwards;
+  animation: fadeOut 0.6s ease forwards;
 }

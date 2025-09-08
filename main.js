@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const splash = document.getElementById('splash');
   const content = document.getElementById('content');
 
-  // Keep splash for 3 seconds, then fade out and show content
   setTimeout(() => {
     splash.classList.add('fadeOut');
     splash.addEventListener('animationend', () => {
@@ -12,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, 1000);
   
-  // Arrow key navigation for scroll snap sections
   const sections = Array.from(content.querySelectorAll('section'));
   let currentIndex = 0;
   
